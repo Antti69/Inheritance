@@ -1,24 +1,13 @@
 #include <iostream>
 #include <string>
-#include <conio.h>
 #include <random>
+#include "MemeFighter.h"
+#include "Dice.h"
+#include <conio.h>
+#include "MemeFrog.h"
+#include "MemeStoner.h"
 
-class Dice
-{
-public:
-	int Roll( int nDice )
-	{
-		int total = 0;
-		for( int n = 0; n < nDice; n++ )
-		{
-			total += d6( rng );
-		}
-		return total;
-	}
-private:
-	std::uniform_int_distribution<int> d6 = std::uniform_int_distribution<int>( 1,6 );
-	std::mt19937 rng = std::mt19937( std::random_device{}() );
-};
+
 
 void Engage( MemeFighter& f1,MemeFighter& f2 )
 {
@@ -52,7 +41,7 @@ int main()
 		f2.Tick();
 
 		std::cout << "Press any key to continue...";
-		while( !_kbhit() );
+		while(!_kbhit());
 		_getch();
 		std::cout << std::endl << std::endl;
 	}
@@ -65,6 +54,6 @@ int main()
 	{
 		std::cout << f2.GetName() << " is victorious!";
 	}
-	while( !_kbhit() );
+	while(!_kbhit());
 	return 0;
 }

@@ -19,4 +19,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MemeFrog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemeStoner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemeFighter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
